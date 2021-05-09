@@ -1,0 +1,15 @@
+<div>
+  <mat-card>
+    <!-- single selection -->
+    <mat-calendar
+      [startAt]="date"
+      [selected]="selectedDate"
+      (selectedChange)="onSelect($event)"
+    ></mat-calendar>
+    <!-- range selection -->
+    <mat-calendar
+      [selected]="dateRange"
+      (selectedChange)="rangeChanged($event)"
+    ></mat-calendar>
+  </mat-card>
+</div>
